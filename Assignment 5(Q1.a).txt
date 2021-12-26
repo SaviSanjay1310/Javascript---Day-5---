@@ -1,0 +1,43 @@
+Day 5 Assignment:
+
+1.Do the below programs in anonymous function & IIFE
+
+a)Print odd numbers in an array:
+
+Solution:
+//Program to find odd number using Anonymous Function
+
+let odd = (array) => {
+    return array.filter((num) => {
+      for (let i = 0; i < array.length; i++) {
+        if (num % 2 === 0) {
+          return false;
+        }
+      }
+      return true;
+    });
+  };
+  console.log(odd([10,15,37,40,50,69,71,80,96,103]));
+
+//Program to find odd number using IIFE function
+
+(function (array) {
+    let odd = [];
+    for (let i in array) {
+      if (array[i] % 2 !== 0) {
+        odd.push(array[i]);
+      }
+    }
+    console.log(odd);
+  })([10,15,37,40,50,69,71,80,96,103]);
+
+Output:
+
+(5) [15, 37, 69, 71, 103]
+0: 15
+1: 37
+2: 69
+3: 71
+4: 103
+length: 5
+[[Prototype]]: Array(0)

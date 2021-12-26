@@ -1,0 +1,14 @@
+b. Convert all the strings to title caps in a string array:
+
+Solution:
+
+let titleCaps =  ()=> {
+  let array = "welcome to javascript, ms.savitha v"
+  let titlecaps = array.toLowerCase().replace(/\b(\w)/g, s => s.toUpperCase());
+  console.log(titlecaps);
+}
+titleCaps();
+
+Output:
+
+Welcome To Javascript, Ms.Savitha V

@@ -1,0 +1,17 @@
+c. Sum of all numbers in an array:
+
+Solution:
+
+let sum = () => {
+  let a = [10,20,50,60,40,30];
+  let sum = a.reduce(function(a, b){
+    return a + b;
+  });
+  console.log("Sum of all numbers in an array = " + sum);
+}
+sum();
+
+Output:
+
+Sum of all numbers in an array = 210
+

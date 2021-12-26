@@ -1,0 +1,24 @@
+C.Sum of all numbers in an array:
+
+Solution:
+
+//Sum of all Numbers in an array using Anonymous function
+
+let array=[10,20,30,40,50];
+let sum=function(s)
+{
+    console.log(s.reduce((ac,b)=>ac+b,0));
+}
+sum(array);
+
+//Sum of all Numbers in an array using IIFE function
+
+(function(array){
+    // for(i in array);
+     let y=array.reduce((ac,b)=>ac+b,0);
+     console.log(y);
+ })([10,20,30,40,50]);
+
+Output:
+
+150

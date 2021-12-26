@@ -1,0 +1,46 @@
+b)Convert all the strings to title caps in a string array:
+
+Solution:
+
+//Program to Convert all the Strings to Title caps in a string array using Anonymous function
+
+let array=["apple","orange","grapes","banana","mango"];
+
+let titlecaps=function(d) {
+    let x=[];
+    let cap=(y) =>
+    {
+        return y.charAt(0).toUpperCase()+y.slice(1);
+
+    }
+for(let i=0;i<d.length;i++)
+{
+x[i]=cap(d[i]);
+}
+console.log(x);
+}
+titlecaps(array);
+
+
+//Program to Convert all the strings to Title caps in a string array using IIFE function
+
+(function(data){
+    let result=[];
+    for(let index in data){
+        let firstletter =data[index][0].toUpperCase();
+        let restletters= data[index].slice(1)
+        result.push(firstletter+restletters)
+    }
+    console.log(result)
+})(["apple","orange","grapes","banana","mango"]);
+
+Output:-
+
+(5) ['Apple', 'Orange', 'Grapes', 'Banana', 'Mango']
+0: "Apple"
+1: "Orange"
+2: "Grapes"
+3: "Banana"
+4: "Mango"
+length: 5
+[[Prototype]]: Array(0)

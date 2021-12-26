@@ -1,0 +1,31 @@
+h. Rotate an array by k times:
+
+Solution:
+
+//Rotate an array by k times and return the Rotated array using Anonymous function
+let rotate = function(array,n){
+  let data ;
+  for(let i=0;i<n;i++){
+      data =array.shift();
+      array.push(data);
+  }
+  return array;
+}
+console.log(rotate([1,2,3,4,5,6,7,8],3));
+
+// Rotate an array by k times and return the Rotated array using IIFE function 
+console.log((function(array,n){
+  let data ;
+  for(let i=0;i<n;i++){
+      data =array.shift();
+      array.push(data);
+  }
+  return array;
+})([1,2,3,4,5,6,7,8],6));
+
+Output:
+
+(8) [4, 5, 6, 7, 8, 1, 2, 3]
+     //Anonymous function
+
+(8) [7, 8, 1, 2, 3, 4, 5, 6]     //IIFE function

@@ -1,0 +1,40 @@
+e. Return all the palindromes in an array:
+
+Solution:
+
+//Return all the Palindromes in an Array using Anonymous function
+
+let array=["AnnA","CiviC","MOM","race","car"];
+
+let palindrome= function (d) 
+{
+    return d.filter((x) =>
+    {
+        let y=x.split("").reverse().join("");
+        if (y==x)
+        {
+            return true;
+        }
+        else return false;
+    });
+}
+console.log(palindrome(array));
+
+//Return all the Palindromes in an Array using IIFE function
+
+(function (array) {
+    data=[]
+    for (let i in array) {
+    let y=array[i].split("").reverse().join("");
+    if (y==array[i]){
+        data.push(array[i]);
+    }
+}
+    console.log(data);
+  })(["AnnA","Mango","MOM","CiviC","Fruits"]);
+
+Output:
+
+(3) ['AnnA', 'CiviC', 'MOM']       //Anonymous function
+
+(3) ['AnnA', 'MOM', 'CiviC']      //IIFE function

@@ -1,0 +1,37 @@
+g. Remove duplicates from an array:
+
+Solution:
+
+//Remove duplicates from an array using Anonymous function
+
+let duplicate = function(array){
+  return [...new Set(array)];
+}
+console.log(duplicate([11,20,20,30,5,49,11,49,8,30]));
+
+//Remove duplicates from an array using IIFE function
+
+console.log((function(array){
+  return[...new Set(array)];
+})(["Apple","Mango","Grapes","Kiwi","Mango","Apple","Banana","Kiwi"]));
+
+Output:
+
+(6) [11, 20, 30, 5, 49, 8]     //Anonymous function
+0: 11
+1: 20
+2: 30
+3: 5
+4: 49
+5: 8
+length: 6
+[[Prototype]]: Array(0)
+
+(5) ['Apple', 'Mango', 'Grapes', 'Kiwi', 'Banana']      //IIFE function
+0: "Apple"
+1: "Mango"
+2: "Grapes"
+3: "Kiwi"
+4: "Banana"
+length: 5
+[[Prototype]]: Array(0)

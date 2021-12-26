@@ -1,0 +1,26 @@
+Day 5 Assigment:
+
+3) Do the below programs in arrow functions ?
+
+a. Print odd numbers in an array:
+
+Solution:
+
+let odd = ()=> {
+  let array = [10,9,8,7,6,5,4,3,2,1];
+let odd = array.filter(n => n % 2 == 1)
+console.log(odd);
+}
+odd();
+
+Output:
+
+(5) [9, 7, 5, 3, 1]
+0: 9
+1: 7
+2: 5
+3: 3
+4: 1
+length: 5
+[[Prototype]]: Array(0)
+

@@ -1,0 +1,24 @@
+e. Return all the palindromes in an array:
+
+Solution:
+
+let isPalindrome =  ()=> {
+  var Array = ['CiviC','Assam','MalayalaM','Carrace','SaaS', 'AppA','Name'];
+  var arr = Array.filter(function (c, d) {
+    var palindrome = c.split('').reverse().join('');
+    if (c == palindrome) {
+      console.log(Array[d]);
+    }
+  });
+}
+isPalindrome();
+
+Output:
+
+CiviC
+
+MalayalaM
+
+SaaS
+
+AppA
